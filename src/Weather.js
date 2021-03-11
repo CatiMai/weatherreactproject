@@ -18,6 +18,25 @@ export default function Weather() {
           </div>
         </div>
       </form>
+      <div className="row">
+        <h2 className="searchedCity">City</h2>
+      </div>
+      <div className="row">
+        <div className="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="emoji"
+          />{" "}
+          6° C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 20%</li>
+            <li>Humidity: 50%</li>
+            <li>Wind: 10km/h</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
