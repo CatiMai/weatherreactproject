@@ -1,8 +1,15 @@
 import "./App.css";
+import "./Weather";
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App container">
+      <div className="weatherApp-wrapper">
+        <div className="weatherApp">
+          <Weather />
+        </div>
+      </div>
       <footer>
         <a
           href="https://github.com/CatiMai/weatherreactproject"
