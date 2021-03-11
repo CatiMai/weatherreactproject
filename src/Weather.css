@@ -1,0 +1,37 @@
+h2.searchedCity {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 19px;
+  text-align: left;
+  color: rgb(135, 135, 135);
+  margin: 20px 0px 20px 15px;
+}
+.Info {
+  text-align: left;
+  font-size: 15px;
+  text-align: left;
+  color: rgb(135, 135, 135);
+  margin: 20px 0px 20px 15px;
+}
+.degree {
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 64px;
+  margin-right: 10px;
+  margin-left: 0px;
+  color: rgb(135, 135, 135);
+}
+.units {
+  font-size: 25px;
+  line-height: 64px;
+  margin-right: 50px;
+  margin-left: 0px;
+  color: rgb(135, 135, 135);
+}
+ul.displayInfo {
+  text-align: left;
+  display: block;
+  list-style-type: none;
+  position: relative;
+  color: rgb(135, 135, 135);
+}
