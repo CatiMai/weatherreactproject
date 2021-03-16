@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -9,7 +10,7 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Monday 20 March 2021 at 12:00",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
@@ -18,7 +19,7 @@ export default function Weather(props) {
       icon: `https://ssl.gstatic.com/onebox/weather/64/sunny.png`,
     });
   }
-  if (WeatherData.true) {
+  if (WeatherData.ready) {
     return (
       <div className="Weather">
         <div className="container">
@@ -38,7 +39,13 @@ export default function Weather(props) {
             </div>
           </form>
           <h2 className="searchedCity">{WeatherData.city}</h2>
-          <div className="Info">Last Updated: {WeatherData.date}</div>
+          <div className="Info">
+            Last Updated:{" "}
+            <>
+              {" "}
+              <FormatDate date={WeatherData.date} />{" "}
+            </>
+          </div>
           <div className="row">
             <div className="col-6">
               <div className="clearfix">
@@ -47,15 +54,19 @@ export default function Weather(props) {
                   alt={WeatherData.description}
                   className="float-left"
                 />{" "}
-                <span className="degree">{WeatherData.temperature}</span>{" "}
+                <span className="degree">
+                  {Math.round(WeatherData.temperature)}
+                </span>{" "}
                 <span className="units">°C</span>
               </div>
             </div>
             <div className="col-6">
               <ul className="displayInfo">
-                <li>Description: {WeatherData.description}</li>
+                <li className="text-capitalize">
+                  Description: {WeatherData.description}
+                </li>
                 <li>Humidity: {WeatherData.humidity}%</li>
-                <li>Wind: {WeatherData.wind}km/h</li>
+                <li>Wind: {Math.round(WeatherData.wind)}km/h</li>
               </ul>
             </div>
           </div>
@@ -63,7 +74,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const key = `c4f507ff8b138e87270d9f1d7092aab2`;
+    const key = `2b81da2d965f990a959c8aaf038b61e7`;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${key}&units=metric`;
     axios.get(url).then(showInfo);
     return "App is loading...";
