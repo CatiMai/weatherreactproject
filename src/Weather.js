@@ -57,7 +57,7 @@ export default function Weather(props) {
             {" "}
             <DisplayWeatherInfo data={WeatherData} />{" "}
           </>
-          <br />
+          <hr />
           <>
             <Forecast city={WeatherData.city} />
           </>

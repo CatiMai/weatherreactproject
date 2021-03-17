@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DisplayForecast from "./DisplayForecast";
+import "./Forecast.css";
 
 export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
@@ -13,12 +15,14 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="Forecast row">
-        <div className="col">10:00 Emoji Temperature</div>
+        <>
+          <DisplayForecast props={forecast.list[0]} />
+        </>
       </div>
     );
   } else {
-    const key = `c4f507ff8b138e87270d9f1d7092aab2`;
-    let url = `https://pro.openweathermap.org/data/2.5/forecast/hourly?q=${props.city}&appid=${key}&units=metric`;
+    const key = `2b81da2d965f990a959c8aaf038b61e7`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${key}&units=metric`;
     axios.get(url).then(showForecast);
     return "Loading";
   }

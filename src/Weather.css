@@ -21,8 +21,7 @@ h2.searchedCity {
   color: rgb(135, 135, 135);
 }
 .Weather canvas {
-  display: inline-block;
-
+  display: block;
   margin-left: 15px;
   margin-top: 14px;
 }
