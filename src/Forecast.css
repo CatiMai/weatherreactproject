@@ -1,6 +1,15 @@
-.forecastIcon canvas {
+.ForecastIcon canvas {
   display: block;
+  margin-left: 0px;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 .forecast {
   text-align: center;
+}
+.ForecastCol {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #414044;
+  border-left: 1px solid #414044;
 }

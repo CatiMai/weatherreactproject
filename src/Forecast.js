@@ -21,6 +21,7 @@ export default function Forecast(props) {
           <DisplayForecast props={forecast.list[2]} />
           <DisplayForecast props={forecast.list[3]} />
           <DisplayForecast props={forecast.list[4]} />
+          <DisplayForecast props={forecast.list[5]} />
         </>
       </div>
     );

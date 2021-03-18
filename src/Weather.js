@@ -57,6 +57,7 @@ export default function Weather(props) {
             {" "}
             <DisplayWeatherInfo data={WeatherData} />{" "}
           </>
+          <div>Hourly Forecast</div>
           <hr />
           <>
             <Forecast city={WeatherData.city} />

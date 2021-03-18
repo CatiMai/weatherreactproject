@@ -14,7 +14,7 @@ export default function DisplayForecast(props) {
   }
   return (
     <div>
-      <div className="col">
+      <div className="col ForecastCol">
         {hours()}
         <div className="ForecastIcon">
           <>

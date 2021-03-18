@@ -20,7 +20,7 @@ h2.searchedCity {
   line-height: inherit;
   color: rgb(135, 135, 135);
 }
-.Weather canvas {
+.weatherIcon canvas {
   display: block;
   margin-left: 15px;
   margin-top: 14px;
