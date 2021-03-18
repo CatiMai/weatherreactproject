@@ -12,11 +12,15 @@ export default function Forecast(props) {
     setForecast(response.data);
     setLoaded(true);
   }
-  if (loaded) {
+  if (loaded && props.city === forecast.city.name) {
     return (
       <div className="Forecast row">
         <>
           <DisplayForecast props={forecast.list[0]} />
+          <DisplayForecast props={forecast.list[1]} />
+          <DisplayForecast props={forecast.list[2]} />
+          <DisplayForecast props={forecast.list[3]} />
+          <DisplayForecast props={forecast.list[4]} />
         </>
       </div>
     );
