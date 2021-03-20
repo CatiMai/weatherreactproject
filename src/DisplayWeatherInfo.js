@@ -28,18 +28,20 @@ export default function DisplayWeatherInfo(props) {
           <div className="weatherIcon float-left">
             <DisplayIcon code={props.data.icon} />{" "}
           </div>
-          <TempandUnits celsius={props.data.temperature} />{" "}
+          <div className="tempStructure">
+            <TempandUnits celsius={props.data.temperature} />{" "}
+          </div>
         </div>
 
         <div className="col-6">
           <ul className="displayInfo">
             <div class="row">
               <div class="col-8 col-sm-6">
-                Sunrise*:
+                Sunrise*
                 <FormatSunrise sunrise={props.data.sunrise} />
               </div>
               <div class="col-4 col-sm-6">
-                Sunset*: <FormatSunset sunset={props.data.sunset} />
+                Sunset* <FormatSunset sunset={props.data.sunset} />
               </div>
               <small className="indication">
                 *Indication relative to your current location

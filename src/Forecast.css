@@ -6,10 +6,12 @@
 }
 .forecast {
   text-align: center;
+  color: rgb(135, 135, 135);
 }
 .ForecastCol {
   margin-left: 5px;
   margin-right: 5px;
   border-right: 1px solid #414044;
   border-left: 1px solid #414044;
+  margin-bottom: 10px;
 }

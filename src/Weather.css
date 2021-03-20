@@ -4,7 +4,7 @@ h2.searchedCity {
   line-height: 19px;
   text-align: left;
   color: rgb(135, 135, 135);
-  margin: 20px 3px 0px 13px;
+  margin: 30px 3px 0px 13px;
 }
 .Info {
   text-align: left;
@@ -19,19 +19,22 @@ h2.searchedCity {
 }
 .description {
   margin-left: 0px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .humidity {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .wind {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .degree {
-  font-size: 60px;
+  font-size: 65px;
 
   color: rgb(135, 135, 135);
+}
+.tempStructure {
+  margin-right: 35px;
 }
 .weatherIcon canvas {
   display: inline;
@@ -50,10 +53,17 @@ small.indication {
 }
 ul.displayInfo {
   text-align: left;
-  margin-top: 10px;
+  margin-top: 15px;
   display: block;
   font-size: 18px;
   list-style-type: none;
   position: relative;
   color: rgb(135, 135, 135);
+  padding-left: 0px;
+}
+.forecastHeadline {
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(135, 135, 135);
+  font-size: 20px;
 }
