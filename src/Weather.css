@@ -3,14 +3,14 @@ h2.searchedCity {
   font-weight: 100;
   line-height: 19px;
   text-align: left;
-  color: rgb(135, 135, 135);
+  color: white;
   margin: 30px 3px 0px 13px;
 }
 .Info {
   text-align: left;
   font-size: 15px;
   text-align: left;
-  color: rgb(135, 135, 135);
+  color: white;
   margin: 10px 0px 20px 15px;
 }
 .weatherDetails {
@@ -31,7 +31,7 @@ h2.searchedCity {
 .degree {
   font-size: 65px;
 
-  color: rgb(135, 135, 135);
+  color: white;
 }
 .tempStructure {
   margin-right: 35px;
@@ -44,8 +44,7 @@ h2.searchedCity {
 .units {
   font-size: 15px;
   line-height: 64px;
-
-  color: rgb(135, 135, 135);
+  color: white;
 }
 small.indication {
   font-size: 10px;
@@ -58,12 +57,13 @@ ul.displayInfo {
   font-size: 18px;
   list-style-type: none;
   position: relative;
-  color: rgb(135, 135, 135);
+  color: white;
   padding-left: 0px;
 }
 .forecastHeadline {
   text-align: center;
   margin-top: 15px;
-  color: rgb(135, 135, 135);
+  color: white;
   font-size: 20px;
+  margin-bottom: 10px;
 }

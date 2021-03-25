@@ -60,7 +60,7 @@ export default function Weather(props) {
             <DisplayWeatherInfo data={WeatherData} />{" "}
           </>
           <div className="forecastHeadline">Hourly Forecast</div>
-          <hr />
+
           <>
             <Forecast city={WeatherData.city} />
           </>

@@ -1,5 +1,6 @@
 import React from "react";
 import DisplayIcon from "./DisplayIcon";
+import "./Forecast.css";
 
 export default function DisplayForecast(props) {
   //let iconPath = ;
