@@ -9,7 +9,7 @@ export default function App() {
       <div className="weatherApp-wrapper">
         <div className="weatherApp">
           <>
-            <Weather city="Honolulu" />
+            <Weather city="Frankfurt" />
           </>
         </div>
       </div>

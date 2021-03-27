@@ -4,6 +4,7 @@ import DisplayIcon from "./DisplayIcon";
 import TempandUnits from "./TempandUnits";
 import FormatSunrise from "./FormatSunrise";
 import FormatSunset from "./FormatSunset";
+import "./Weather.css";
 export default function DisplayWeatherInfo(props) {
   return (
     <div className="displayInfo">
