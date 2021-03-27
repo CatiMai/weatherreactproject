@@ -35,6 +35,7 @@ export default function Weather(props) {
   function updateCity(event) {
     setCity(event.target.value);
   }
+
   if (WeatherData.ready) {
     return (
       <div className="Weather">
@@ -48,19 +49,19 @@ export default function Weather(props) {
                   className="form-control"
                   autoFocus="on"
                   onChange={updateCity}
-                ></input>
+                />
               </div>
               <div className="col-3">
-                <input type="submit" className="btn btn-primary w-100"></input>
+                <input type="submit" className="btn btn-light w-100" />
               </div>
             </div>
           </form>
+
           <>
             {" "}
             <DisplayWeatherInfo data={WeatherData} />{" "}
           </>
           <div className="forecastHeadline">Hourly Forecast</div>
-
           <>
             <Forecast city={WeatherData.city} />
           </>

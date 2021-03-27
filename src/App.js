@@ -8,7 +8,9 @@ export default function App() {
     <div className="App container">
       <div className="weatherApp-wrapper">
         <div className="weatherApp">
-          <Weather city="Honolulu" />
+          <>
+            <Weather city="Honolulu" />
+          </>
         </div>
       </div>
       <footer>

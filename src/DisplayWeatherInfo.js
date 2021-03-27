@@ -35,12 +35,12 @@ export default function DisplayWeatherInfo(props) {
 
         <div className="col-6">
           <ul className="displayInfo">
-            <div class="row">
-              <div class="col-8 col-sm-6">
+            <div className="row">
+              <div className="col-8 col-sm-6">
                 Sunrise*
                 <FormatSunrise sunrise={props.data.sunrise} />
               </div>
-              <div class="col-4 col-sm-6">
+              <div className="col-4 col-sm-6">
                 Sunset* <FormatSunset sunset={props.data.sunset} />
               </div>
               <small className="indication">

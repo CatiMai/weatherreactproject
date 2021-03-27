@@ -42,9 +42,14 @@ h2.searchedCity {
   margin-top: 14px;
 }
 .units {
-  font-size: 15px;
+  font-size: 23px;
   line-height: 64px;
   color: white;
+}
+.units a {
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
 }
 small.indication {
   font-size: 10px;
