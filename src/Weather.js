@@ -60,10 +60,13 @@ export default function Weather(props) {
             {" "}
             <DisplayWeatherInfo data={WeatherData} />{" "}
           </>
-          <div className="forecastHeadline">Hourly Forecast</div>
+          <div className="forecastHeadline">Hourly* Forecast</div>
           <>
             <Forecast city={WeatherData.city} />
           </>
+          <small className="indication">
+            *Time indication relative to your current location
+          </small>
         </div>
       </div>
     );

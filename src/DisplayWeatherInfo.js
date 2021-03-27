@@ -37,16 +37,13 @@ export default function DisplayWeatherInfo(props) {
         <div className="col-6">
           <ul className="displayInfo">
             <div className="row">
-              <div className="col-8 col-sm-6">
+              <div className="col-8 col-sm-6 sun">
                 Sunrise*
                 <FormatSunrise sunrise={props.data.sunrise} />
               </div>
-              <div className="col-4 col-sm-6">
+              <div className="col-4 col-sm-6 sun">
                 Sunset* <FormatSunset sunset={props.data.sunset} />
               </div>
-              <small className="indication">
-                *Indication relative to your current location
-              </small>
             </div>
           </ul>
         </div>
